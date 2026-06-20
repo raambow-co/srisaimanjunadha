@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 4.5rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #111111;
+    background-color: #F0FDF4;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', sans-serif;
+  }
+}
+
+/* Custom Scrollbar for premium feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFFFFF;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E2E8F0;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #CBD5E1;
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.glass-panel-dark {
+  background: rgba(17, 17, 17, 0.8);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+}
+
+.glass-card-hover {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card-hover:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 87, 184, 0.15);
+}
+
+/* Modern Abstract Grids and Circular Shapes */
+.grid-bg {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+}
+
+.glow-orb {
+  filter: blur(80px);
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+/* Wave Background Effect */
+.wave-svg {
+  animation: waveAnim 20s linear infinite;
+}
+
+@keyframes waveAnim {
+  0% {
+    transform: translateX(0) translateZ(0) scaleY(1);
+  }
+  50% {
+    transform: translateX(-25%) translateZ(0) scaleY(0.85);
+  }
+  100% {
+    transform: translateX(-50%) translateZ(0) scaleY(1);
+  }
+}
+
+/* Infinite Horizontal Marquee Animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.3333%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Brand Custom Color Fallbacks (Vite Dev Server Caching Workaround) */
+:root {
+  --brand-blue: #0057B8;
+  --brand-orange: #FF7A00;
+  --brand-green: #22A447;
+  --brand-greenDark: #0C3E1E;
+  --brand-greenLight: #F0FDF4;
+  --brand-dark: #111111;
+  --brand-gray: #555555;
+  --brand-light: #F7FAFC;
+}
+
+/* Force Hero section to render the correct deep forest green gradient background */
+#home {
+  background: linear-gradient(135deg, #0C3E1E 0%, #155A2B 50%, #22A447 100%) !important;
+}
+
+.text-brand-blue { color: var(--brand-blue) !important; }
+.text-brand-orange { color: var(--brand-orange) !important; }
+.text-brand-green { color: var(--brand-green) !important; }
+.text-brand-greenDark { color: var(--brand-greenDark) !important; }
+.text-brand-dark { color: var(--brand-dark) !important; }
+.text-brand-gray { color: var(--brand-gray) !important; }
+
+.bg-brand-blue { background-color: var(--brand-blue) !important; }
+.bg-brand-orange { background-color: var(--brand-orange) !important; }
+.bg-brand-green { background-color: var(--brand-green) !important; }
+.bg-brand-greenDark { background-color: var(--brand-greenDark) !important; }
+.bg-brand-greenLight { background-color: var(--brand-greenLight) !important; }
+.bg-brand-dark { background-color: var(--brand-dark) !important; }
+.bg-brand-light { background-color: var(--brand-light) !important; }
+
+.bg-brand-orange\/20 { background-color: rgba(255, 122, 0, 0.2) !important; }
+.bg-brand-blue\/20 { background-color: rgba(0, 87, 184, 0.2) !important; }
+.bg-brand-orange\/10 { background-color: rgba(255, 122, 0, 0.1) !important; }
+.bg-brand-blue\/10 { background-color: rgba(0, 87, 184, 0.1) !important; }
+.bg-brand-green\/10 { background-color: rgba(34, 164, 71, 0.1) !important; }
+.bg-brand-greenLight\/70 { background-color: rgba(240, 253, 244, 0.7) !important; }
+
+.border-brand-blue { border-color: var(--brand-blue) !important; }
+.border-brand-orange { border-color: var(--brand-orange) !important; }
+.border-brand-green { border-color: var(--brand-green) !important; }
+
+.from-brand-greenDark {
+  --tw-gradient-from: var(--brand-greenDark) var(--tw-gradient-from-position) !important;
+  --tw-gradient-to: rgba(12, 62, 30, 0) var(--tw-gradient-to-position) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+.to-brand-green {
+  --tw-gradient-to: var(--brand-green) var(--tw-gradient-to-position) !important;
+}
+.via-brand-green {
+  --tw-gradient-to: rgba(34, 164, 71, 0) var(--tw-gradient-to-position) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--brand-green) var(--tw-gradient-via-position), var(--tw-gradient-to) !important;
+}
+
+/* Scrolled Navbar and Mobile Drawer Glassmorphism overrides */
+.navbar-scrolled {
+  background-color: rgba(17, 17, 17, 0.95) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -4px rgba(0, 0, 0, 0.3) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.mobile-drawer-scrolled {
+  background-color: rgba(17, 17, 17, 0.98) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
