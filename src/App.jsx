@@ -20,8 +20,8 @@ function App() {
     <div className="relative min-h-screen bg-brand-greenLight selection:bg-brand-blue selection:text-white antialiased">
       {/* 1. SEO Configuration */}
       <SEO
-        title="Sri Sai Manjunadha Enterprises | Solar Rooftops & Water Systems in Eluru"
-        description="Established in 2010. Sri Sai Manjunadha Enterprises offers authorized V-Guard, Usha, Bajaj solar rooftop systems, RO water purifiers, water softeners, and appliance services in Eluru & West Godavari District."
+        title="Solar Company in Eluru | Sri Sai Manjunadha Enterprises"
+        description="Sri Sai Manjunadha Enterprises is the best solar company in Eluru. We install premium bifacial solar panels & off-grid/on-grid systems in West Godavari."
         path="/"
       />
 
