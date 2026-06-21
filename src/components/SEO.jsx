@@ -60,10 +60,10 @@ const SEO = ({ title, description, path = "" }) => {
       "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Main Road, Near Fire Station",
+        "streetAddress": "Door No: 22B-5-7, Kanukolanu Vari Street, Powerpeta, Station Road, opp. K S Towers",
         "addressLocality": "Eluru",
         "addressRegion": "Andhra Pradesh",
-        "postalCode": "534001",
+        "postalCode": "534002",
         "addressCountry": "IN"
       },
       "geo": {

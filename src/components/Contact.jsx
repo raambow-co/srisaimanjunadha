@@ -139,7 +139,7 @@ const Contact = () => {
                   <a href="tel:+919949144551" className="text-brand-green font-bold text-sm block hover:underline">
                     +91 99491 44551
                   </a>
-                  <span className="text-xs text-brand-gray">Alternative: +91 88122 23923</span>
+                  <span className="text-xs text-brand-gray">Alternative: +91 92480 44551</span>
                 </div>
               </div>
 
@@ -149,10 +149,10 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-extrabold text-brand-dark text-sm mb-1">Email Inquiries</h4>
-                  <a href="mailto:support@srisaimanjunadha.com" className="text-brand-green font-bold text-sm block hover:underline break-all">
-                    support@srisaimanjunadha.com
+                  <a href="mailto:gvvkanilkumar143@gmail.com" className="text-brand-green font-bold text-sm block hover:underline break-all">
+                    gvvkanilkumar143@gmail.com
                   </a>
-                  <span className="text-xs text-brand-gray">Inquiries: sales@srisaimanjunadha.com</span>
+                  <span className="text-xs text-brand-gray">Support: support@srisaimanjunadha.com</span>
                 </div>
               </div>
 
@@ -163,7 +163,7 @@ const Contact = () => {
                 <div>
                   <h4 className="font-extrabold text-brand-dark text-sm mb-1">Registered Office Address</h4>
                   <p className="text-brand-gray text-xs leading-relaxed">
-                    Sri Sai Manjunadha Enterprises, Main Road, Near Fire Station, Eluru District, Andhra Pradesh - 534001
+                    Sri Sai Manjunadha Enterprises, Door No: 22B-5-7, Kanukolanu Vari Street, Powerpeta, Station Road, opp. K S Towers, Eluru, Andhra Pradesh - 534002
                   </p>
                 </div>
               </div>
