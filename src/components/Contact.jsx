@@ -149,10 +149,10 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-extrabold text-brand-dark text-sm mb-1">Email Inquiries</h4>
-                  <a href="mailto:gvvkanilkumar143@gmail.com" className="text-brand-green font-bold text-sm block hover:underline break-all">
-                    gvvkanilkumar143@gmail.com
+                  <a href="mailto:srisaimanjunadhaenterprises@gmail.com" className="text-brand-green font-bold text-sm block hover:underline break-all">
+                    srisaimanjunadhaenterprises@gmail.com
                   </a>
-                  <span className="text-xs text-brand-gray">Support: support@srisaimanjunadha.com</span>
+                  <span className="text-xs text-brand-gray">Support: srisaimanjunadhaenterprises@gmail.com</span>
                 </div>
               </div>
 
@@ -186,7 +186,7 @@ const Contact = () => {
             <div className="rounded-3xl border border-gray-150 overflow-hidden shadow-sm aspect-video w-full bg-gray-100">
               <iframe
                 title="Sri Sai Manjunadha Enterprises Location Map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3822.457814421442!2d81.1018!3d16.7107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3614945a555555%3A0x1a1a1a1a1a1a1a1a!2sEluru%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3822.454238515082!2d81.10505081534015!3d16.712482900000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3614ce47902335%3A0xeedaf7fd01f73b9d!2sSri%20Sai%20Manjunadha%20Enterprises!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
