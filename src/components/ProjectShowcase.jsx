@@ -3,16 +3,16 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 // Import local project gallery images
-import p1 from '../assets/p1.jpeg';
-import p2 from '../assets/p2.jpeg';
-import p3 from '../assets/p3.jpeg';
-import p4 from '../assets/p4.jpeg';
-import p5 from '../assets/p5.jpeg';
-import p6 from '../assets/p6.jpeg';
-import p7 from '../assets/p7.jpeg';
-import p8 from '../assets/p8.jpeg';
-import p9 from '../assets/p9.jpeg';
-import p10 from '../assets/p10.jpeg';
+import p1 from '../assets/p1.webp';
+import p2 from '../assets/p2.webp';
+import p3 from '../assets/p3.webp';
+import p4 from '../assets/p4.webp';
+import p5 from '../assets/p5.webp';
+import p6 from '../assets/p6.webp';
+import p7 from '../assets/p7.webp';
+import p8 from '../assets/p8.webp';
+import p9 from '../assets/p9.webp';
+import p10 from '../assets/p10.webp';
 
 const ProjectShowcase = () => {
   const images = [p1, p2, p3, p4, p5, p6, p7, p8, p9, p10];

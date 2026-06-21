@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, Phone, Sun, Droplets, Zap, ShieldCheck, Trophy } from 'lucide-react';
-import pmModiImage from '../assets/pm_modi.jpg';
-import proprietorImage from '../assets/proprietor.jpg';
+import pmModiImage from '../assets/pm_modi.webp';
+import proprietorImage from '../assets/proprietor.webp';
 
 const Hero = () => {
   const images = [pmModiImage, proprietorImage];

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Phone, ShieldCheck } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import logoImage from '../assets/sri_sai_logo.png';
+import logoImage from '../assets/sri_sai_logo.webp';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

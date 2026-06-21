@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Shield, Sparkles, Award, Star } from 'lucide-react';
-import aboutImage from '../assets/about_image.png';
+import aboutImage from '../assets/about_image.webp';
 
 const About = () => {
   const [activeIdx, setActiveIdx] = useState(0);

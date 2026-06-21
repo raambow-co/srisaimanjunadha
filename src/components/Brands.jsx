@@ -1,13 +1,13 @@
 import React from 'react';
-import vGuardLogo from '../assets/v_guard_logo.jpeg';
-import ushaLogo from '../assets/usha_home_appliances.png';
-import bajajLogo from '../assets/bajaj_home_electronics.png';
-import philipsLogo from '../assets/philips.png';
-import symphonyLogo from '../assets/symphony.png';
-import mccoyLogo from '../assets/mccoy_logo.png';
-import suryaLogo from '../assets/surya_electronics.png';
-import polycabLogo from '../assets/polycab_logo.png';
-import relianceLogo from '../assets/reliance_logo.png';
+import vGuardLogo from '../assets/v_guard_logo.webp';
+import ushaLogo from '../assets/usha_home_appliances.webp';
+import bajajLogo from '../assets/bajaj_home_electronics.webp';
+import philipsLogo from '../assets/philips.webp';
+import symphonyLogo from '../assets/symphony.webp';
+import mccoyLogo from '../assets/mccoy_logo.webp';
+import suryaLogo from '../assets/surya_electronics.webp';
+import polycabLogo from '../assets/polycab_logo.webp';
+import relianceLogo from '../assets/reliance_logo.webp';
 
 const Brands = () => {
   const partners = [

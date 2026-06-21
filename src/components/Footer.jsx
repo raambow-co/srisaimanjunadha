@@ -1,6 +1,6 @@
 import React from 'react';
 import { ShieldCheck, Mail, Phone, MapPin, ArrowUp } from 'lucide-react';
-import logoImage from '../assets/sri_sai_logo.png';
+import logoImage from '../assets/sri_sai_logo.webp';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
