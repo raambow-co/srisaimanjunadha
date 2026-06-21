@@ -149,7 +149,14 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-extrabold text-brand-dark text-sm mb-1">Email Inquiries</h4>
-                  <a href="mailto:srisaimanjunadhaenterprises@gmail.com" className="text-brand-green font-bold text-sm block hover:underline break-all">
+                  <a 
+                    href="mailto:srisaimanjunadhaenterprises@gmail.com" 
+                    onClick={(e) => {
+                      e.preventDefault();
+                      window.open("https://mail.google.com/mail/?view=cm&fs=1&to=srisaimanjunadhaenterprises@gmail.com", "_blank");
+                    }}
+                    className="text-brand-green font-bold text-sm block hover:underline break-all"
+                  >
                     srisaimanjunadhaenterprises@gmail.com
                   </a>
                   <span className="text-xs text-brand-gray">Support: srisaimanjunadhaenterprises@gmail.com</span>

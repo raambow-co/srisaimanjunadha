@@ -124,7 +124,14 @@ const Footer = () => {
               </li>
               <li className="flex items-center space-x-3 text-sm text-gray-400">
                 <Mail size={18} className="text-brand-green shrink-0" />
-                <a href="mailto:srisaimanjunadhaenterprises@gmail.com" className="hover:text-brand-green transition-colors break-all">
+                <a 
+                  href="mailto:srisaimanjunadhaenterprises@gmail.com" 
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.open("https://mail.google.com/mail/?view=cm&fs=1&to=srisaimanjunadhaenterprises@gmail.com", "_blank");
+                  }}
+                  className="hover:text-brand-green transition-colors break-all"
+                >
                   srisaimanjunadhaenterprises@gmail.com
                 </a>
               </li>
