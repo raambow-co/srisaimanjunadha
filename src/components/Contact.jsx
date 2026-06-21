@@ -54,25 +54,56 @@ const Contact = () => {
     return Object.keys(tempErrors).length === 0;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!validateForm()) return;
 
     setIsSubmitting(true);
 
-    // Mock form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitSuccess(true);
-      // Reset form
-      setFormData({
-        name: '',
-        phone: '',
-        location: '',
-        service: '',
-        message: ''
+    // Formspree Integration
+    // IMPORTANT: Replace "xoqgldqy" with your actual Formspree Form ID
+    const formspreeFormId = "xoqgldqy";
+
+    try {
+      const response = await fetch(`https://formspree.io/f/${formspreeFormId}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify({
+          Name: formData.name,
+          Phone: formData.phone,
+          Location: formData.location,
+          Service: formData.service,
+          Message: formData.message
+        })
       });
-    }, 2000);
+
+      if (response.ok) {
+        setIsSubmitting(false);
+        setSubmitSuccess(true);
+        // Reset form
+        setFormData({
+          name: '',
+          phone: '',
+          location: '',
+          service: '',
+          message: ''
+        });
+      } else {
+        const errorData = await response.json();
+        setErrors({
+          submit: errorData.error || "Form submission failed. Please check your credentials or try again later."
+        });
+      }
+    } catch (err) {
+      setErrors({
+        submit: "An internet connection or network error occurred. Please try again."
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -204,6 +235,13 @@ const Contact = () => {
                         Select your requested service and we will contact you immediately.
                       </p>
                     </div>
+
+                    {errors.submit && (
+                      <div className="p-4 bg-red-50 border border-red-200 text-red-700 text-xs rounded-xl flex items-center shadow-sm">
+                        <AlertCircle size={16} className="mr-2 shrink-0 text-red-600" />
+                        <span>{errors.submit}</span>
+                      </div>
+                    )}
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                       {/* Name */}
