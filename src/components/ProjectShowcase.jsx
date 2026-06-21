@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
-// Import local project gallery images
 import p1 from '../assets/p1.webp';
 import p2 from '../assets/p2.webp';
 import p3 from '../assets/p3.webp';
@@ -13,9 +12,14 @@ import p7 from '../assets/p7.webp';
 import p8 from '../assets/p8.webp';
 import p9 from '../assets/p9.webp';
 import p10 from '../assets/p10.webp';
+import p14 from '../assets/p14.jpeg';
+import p15 from '../assets/p15.jpeg';
+import p16 from '../assets/p16.jpeg';
+import p17 from '../assets/p17.jpeg';
+import p18 from '../assets/p18.jpeg';
 
 const ProjectShowcase = () => {
-  const images = [p1, p2, p3, p4, p5, p6, p7, p8, p9, p10];
+  const images = [p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p14, p15, p16, p17, p18];
   const [activeIndex, setActiveIndex] = useState(0);
   const [windowWidth, setWindowWidth] = useState(
     typeof window !== 'undefined' ? window.innerWidth : 1200
