@@ -111,16 +111,20 @@ const Footer = () => {
                 <MapPin size={18} className="text-brand-orange shrink-0 mt-0.5" />
                 <span>
                   Sri Sai Manjunadha Enterprises,<br />
-                  Door No: 22B-5-7, Kanukolanu Vari Street,<br />
-                  Powerpeta, Station Road, opp. K S Towers,<br />
-                  Eluru, Andhra Pradesh - 534002
+                  Flat No: 104, Raja Rammohan Rai Street,<br />
+                  Powerpeta, Eluru, AP - 534002
                 </span>
               </li>
-              <li className="flex items-center space-x-3 text-sm text-gray-400">
-                <Phone size={18} className="text-brand-blue shrink-0" />
-                <a href="tel:+919949144551" className="hover:text-brand-blue transition-colors">
-                  +91 99491 44551
-                </a>
+              <li className="flex items-start space-x-3 text-sm text-gray-400">
+                <Phone size={18} className="text-brand-blue shrink-0 mt-0.5" />
+                <div className="flex flex-col">
+                  <a href="tel:+919949144551" className="hover:text-brand-blue transition-colors">
+                    +91 99491 44551
+                  </a>
+                  <a href="tel:08812224451" className="text-xs text-gray-400 hover:text-brand-blue transition-colors mt-0.5">
+                    Landline: 08812-224451
+                  </a>
+                </div>
               </li>
               <li className="flex items-center space-x-3 text-sm text-gray-400">
                 <Mail size={18} className="text-brand-green shrink-0" />

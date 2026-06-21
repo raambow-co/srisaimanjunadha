@@ -139,7 +139,8 @@ const Contact = () => {
                   <a href="tel:+919949144551" className="text-brand-green font-bold text-sm block hover:underline">
                     +91 99491 44551
                   </a>
-                  <span className="text-xs text-brand-gray">Alternative: +91 92480 44551</span>
+                  <span className="text-xs text-brand-gray block">Alternative Mobile: +91 92480 44551</span>
+                  <a href="tel:08812224451" className="text-xs text-brand-gray block hover:underline mt-0.5">Landline: 08812-224451</a>
                 </div>
               </div>
 
@@ -170,7 +171,7 @@ const Contact = () => {
                 <div>
                   <h4 className="font-extrabold text-brand-dark text-sm mb-1">Registered Office Address</h4>
                   <p className="text-brand-gray text-xs leading-relaxed">
-                    Sri Sai Manjunadha Enterprises, Door No: 22B-5-7, Kanukolanu Vari Street, Powerpeta, Station Road, opp. K S Towers, Eluru, Andhra Pradesh - 534002
+                    Sri Sai Manjunadha Enterprises, Flat No: 104, Raja Rammohan Rai Street, Powerpeta, Eluru, Andhra Pradesh - 534002
                   </p>
                 </div>
               </div>
