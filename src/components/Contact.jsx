@@ -62,7 +62,7 @@ const Contact = () => {
 
     // Formspree Integration
     // IMPORTANT: Replace "xoqgldqy" with your actual Formspree Form ID
-    const formspreeFormId = "xoqgldqy";
+    const formspreeFormId = "xkolwbkq";
 
     try {
       const response = await fetch(`https://formspree.io/f/${formspreeFormId}`, {
